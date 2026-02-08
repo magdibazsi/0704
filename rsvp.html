@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visszajelzés | Magdi & Balázs Esküvője</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Sorkizárt formázás a teljes tartalomra */
+        body, p, h1, h2, li {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Kezdőlap</a></li> 
+            <li><a href="faq.html">Kérdések & Válaszok</a></li> 
+            <li><a href="timeline.html">Program</a></li> 
+        </ul>
+    </nav>
+    
+    <main>
+        
+        <h1>Visszajelzés (RSVP)</h1>
+        <p>Kérjük, legkésőbb <strong>2026. április 30-ig</strong> jelezzétek vissza részvételi szándékotokat!</p>
+        
+        <form action="https://formspree.io/f/xwpwgdwd" method="POST">
+            
+            <fieldset>
+                <legend>Személyes adatok</legend>
+                <label for="name">Teljes név (Vendég 1):</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="partner_name"> Párod neve (ezt kérlek csak akkor töltsd ki, ha a párodat is hívtuk a lakodalomba):</label>
+                <input type="text" id="partner_name" name="partner_name"><br><br>
+
+                <label for="partner_name"> Gyerek(ek) neve és kora:</label>
+                <input type="text" id="kids_name" name="kids_name"><br><br>
+
+                <label for="email">E-mail cím:</label>
+                <input type="email" id="email" name="_replyto" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Részvétel</legend>
+                <p>Eljöttök az esküvőre?</p>
+            <div class="radio-group">
+               <label>
+                  <input type="radio" id="reszvetel_igen" name="reszvetel" value="Igen, örömmel megyünk!" required>
+                    Igen, örömmel megyünk!
+                </label>
+
+                <label>
+                    <input type="radio" id="reszvetel_nem" name="reszvetel" value="Sajnos nem tudunk részt venni.">
+                   Sajnos nem tudunk részt venni.
+               </label>
+</div>
+
+
+                <label for="felnott_szam">Vendégek száma (összesen):</label>
+                <input type="number" id="felnott_szam" name="felnott_szam" min="0" max="10" required><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Egyéb információk</legend>
+                <label for="uzenet">Ételallergia / Üzenet (pl. gluténmentes, tejmentes stb.):</label><br>
+                <textarea id="uzenet" name="uzenet" rows="4" cols="50"></textarea>
+
+                <label for="uzenet"> Zenei kívánság, amire mindenképp szeretnél táncolni:</label><br>
+                <textarea id="uzenet" name="uzenet" rows="4" cols="50"></textarea>
+            </fieldset>
+
+            <br>
+            <input type="submit" value="Visszajelzés elküldése">
+        </form>
+
+    </main>
+
+    <footer>
+        <p>Vissza a <a href="index.html">Kezdőlapra</a>.</p>
+    </footer>
+
+</body>
+</html>
