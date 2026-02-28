@@ -313,20 +313,6 @@ footer a {
     text-decoration: none;
 }
 
-/* ===========================
-   MOBIL NÉZET
-   ===========================*/
-@media (max-width: 700px) {
-    .locations {
-        flex-direction: column;
-        padding: 0 20px;
-    }
-
-    .hero {
-        height: 250px;
-    }
-}
-
 
 /* ===========================
    TIMELINE – PROGRAMTERV
