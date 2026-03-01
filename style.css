@@ -33,7 +33,6 @@ nav ul {
 
 nav a {
     color: #fff;
-    text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
 }
@@ -44,15 +43,14 @@ nav a:hover {
 }
 
 nav b {
-    color: #7a0000;
-    text-decoration: none;
+    color: #fdf9f4;
     font-weight: bold;
     font-size: 1.1rem;
 }
 
 nav b:hover {
     text-decoration: underline;
-    text-decoration-color: #7a0000;
+    text-decoration-color: #fdf9f4;
 }
 
 /* ===========================
