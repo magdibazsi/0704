@@ -39,19 +39,18 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    text-decoration-color: red;
+    text-decoration-color: #fff;
 }
 
 .nav-link {
-    color: #fdf9f4;
+    color: #7a0000;
     font-weight: bold;
     font-size: 1.1rem;
-    text-decoration: none;
 }
 
 .nav-link:hover {
     text-decoration: underline;
-    text-decoration-color: #fdf9f4;
+    text-decoration-color: #7a0000;
 }
 
 /* ===========================
