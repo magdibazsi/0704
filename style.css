@@ -42,13 +42,14 @@ nav a:hover {
     text-decoration-color: red;
 }
 
-nav b {
+.nav-link {
     color: #fdf9f4;
     font-weight: bold;
     font-size: 1.1rem;
+    text-decoration: none;
 }
 
-nav b:hover {
+.nav-link:hover {
     text-decoration: underline;
     text-decoration-color: #fdf9f4;
 }
