@@ -386,39 +386,17 @@ footer a {
    (nem írja felül a desktopot)
    =========================================*/
 @media (max-width: 700px) {
-
-    /* NAV – tördelődjön és legyen könnyen kattintható */
-@media (max-width: 700px) {
-
-    /* Hamburger látható */
-    .hamburger {
-        display: block;
-        text-align: right;
-        padding: 10px 15px;
-    }
-
-    /* Menü alapból rejtve */
-    nav ul {
-        display: none;
-        flex-direction: column;
-        align-items: center;   /* ← KÖZÉPRE IGAZÍTÁS */
-        gap: 20px;
-        padding: 20px 0;
-        background: #111;
-        width: 100%;
-    }
-
-    /* Ha aktív */
-    nav ul.active {
-        display: flex;
-    }
-
-    nav a {
-        font-size: 1.1rem;
-        padding: 10px;
-        display: block;
-    }
-
+   /* NAV – tördelődjön és legyen könnyen kattintható */ 
+   nav ul {
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 0 10px;
+   }
+   nav a {
+      font-size: 1rem;
+      padding: 8px 6px;
+      display: block; 
+   }
     /* HERO */
     .hero {
         height: 260px;
