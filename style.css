@@ -439,70 +439,103 @@ footer p {
 }
 
 
+/* ===========================
+   MOBIL NÉZET
+   ===========================*/
+@media (max-width: 768px) {
 
-/* =========================================
-   MOBIL – OKOSTELEFONRA OPTIMALIZÁLVA
-   (nem írja felül a desktopot)
-   ========================================= */
-@media (max-width: 650px) {
+/* ===== NAVIGÁCIÓ ===== */
+nav ul {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0 10px;
+}
 
-
-    nav a {
-        font-size: 1rem;
-        padding: 8px 6px;
-        display: block;
-    }
-
-  /*   HERO */
-    .hero {
-        height: 260px;
-        background-attachment: scroll; /* mobilon ne legyen fixed */
-    }
-
-   /* HERO SZÖVEG – ne legyen elforgatva mobilon */
-    .hero-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        padding: 0 15px;
-    }
+nav a {
+    font-size: 0.95rem;
+}
 
 
-    nav ul {
-        flex-wrap: wrap;
-        gap: 15px;
-        padding: 0 10px;
-    }
+/* ===== HERO ===== */
+.hero,
+.hero.index,
+.hero.program,
+.hero.faq,
+.hero.RSVP {
+    height: 300px;
+    background-attachment: scroll; /* mobilon ne legyen fixed */
+}
 
-    .hero {
-        height: 260px;
-        background-attachment: scroll;
-    }
+.hero-text {
+    transform: none;
+    position: absolute;
+    top: auto;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+}
 
-    .hero-text h1 {
-        font-size: 1.8rem;
-    }
+.hero-text h1 {
+    font-size: 1.6rem;
+}
 
-    .locations {
-        flex-direction: column;
-    }
 
-    .image-box img {
-        width: 85%;
-    }
+/* ===== HELYSZÍNEK (LAKODALOM / SZERTARTÁS) ===== */
+.locations {
+    flex-direction: column;
+    padding: 0 15px;
+    gap: 25px;
+}
 
-    .timeline {
-        padding-left: 40px;
-    }
+.location iframe {
+    height: 220px;
+}
 
-    .timeline::before {
-        left: 18px;
-    }
 
-    .timeline-item::before {
-        left: -28px;
-    }
-    }
-   
+/* ===== TIMELINE ===== */
+.timeline {
+    padding-left: 40px;
+}
+
+.timeline::before {
+    display: none; /* háttérkép mobilon zavaró */
+}
+
+.timeline::after {
+    left: 18px;
+}
+
+.timeline-item {
+    gap: 15px;
+}
+
+.timeline-item::before {
+    left: -22px;
+}
+
+.timeline .time {
+    min-width: 70px;
+    font-size: 0.95rem;
+}
+
+.timeline .content h3 {
+    font-size: 1rem;
+}
+
+
+/* ===== ÁLTALÁNOS SZEKCIÓK ===== */
+main section,
+main form {
+    padding: 18px;
+    width: 94%;
+}
+
+
+/* ===== KÉPEK ===== */
+.image-box img {
+    width: 90%;
+    max-width: 100%;
+}
+
+}
