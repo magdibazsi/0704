@@ -493,34 +493,48 @@ nav a {
 }
 
 
-/* ===== TIMELINE ===== */
+/* ===== TIMELINE MOBIL ===== */
 .timeline {
-    padding-left: 40px;
+    padding-left: 30px;
 }
 
 .timeline::before {
-    display: none; /* háttérkép mobilon zavaró */
+    display: none;
 }
 
 .timeline::after {
-    left: 18px;
+    left: 10px;
+    width: 2px;
 }
 
 .timeline-item {
-    gap: 15px;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 28px;
 }
 
 .timeline-item::before {
     left: -22px;
+    top: 4px;
+    width: 10px;
+    height: 10px;
 }
 
 .timeline .time {
-    min-width: 70px;
-    font-size: 0.95rem;
+    font-weight: bold;
+    font-size: 1.05rem;
+    color: #7a0000;
+    min-width: auto;
 }
 
 .timeline .content h3 {
     font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.timeline .content p {
+    margin: 0;
+    font-size: 0.95rem;
 }
 
 
